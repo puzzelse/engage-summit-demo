@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puzzel at Engage Customer Summit 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Noto+Serif+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --depths:#0c1436; --pine:#005c4d; --berry:#ff375b; --sun:#ff9903; --frost:#dbacf5; --haze:#fff3eb;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;background:var(--depths);color:var(--haze);line-height:1.7;font-size:18px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+em.accent{font-family:'Noto Serif Display',serif;font-style:italic;font-weight:800;color:var(--sun);letter-spacing:-.01em}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--frost);margin-bottom:18px}
+.eyebrow.berry{color:var(--berry)}
+h1,h2,h3{font-weight:600;line-height:1.12;letter-spacing:-.02em}
+h1{font-size:clamp(44px,7.5vw,92px)}
+h2{font-size:clamp(32px,4.5vw,54px);margin-bottom:20px}
+h3{font-size:22px;line-height:1.3;margin-bottom:10px}
+p.lead{font-size:20px;max-width:680px;opacity:.88}
+.btn{display:inline-block;font-weight:600;font-size:16px;padding:13px 30px;border-radius:24px;border:2px solid transparent;cursor:pointer;font-family:inherit;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--sun);color:var(--depths)}
+.btn.ghost{border-color:rgba(255,243,235,.4);color:var(--haze);background:transparent}
+.btn.ghost:hover{border-color:var(--haze)}
+section{padding:110px 0;position:relative}
+.light{background:var(--haze);color:var(--depths)}
+.light .eyebrow{color:var(--berry)}
+.light em.accent{color:var(--berry)}
+.pine{background:var(--pine)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(12,20,54,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,243,235,.08)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+nav img{height:30px;display:block}
+nav .links{display:flex;gap:28px;align-items:center;font-size:15px;font-weight:600}
+nav .links a:not(.btn):hover{color:var(--sun)}
+nav .btn{padding:9px 22px;font-size:14px}
+@media(max-width:820px){nav .links a:not(.btn){display:none}}
+
+/* hero */
+.hero{padding:120px 0 130px;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-180px;top:-120px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(255,55,91,.28),transparent 68%)}
+.hero:after{content:"";position:absolute;left:-200px;bottom:-260px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(219,172,245,.16),transparent 68%)}
+.hero .wrap{position:relative;z-index:1}
+.event-tag{display:inline-flex;gap:10px;align-items:center;padding:8px 18px;border:1px solid rgba(219,172,245,.45);border-radius:24px;font-size:14px;font-weight:600;color:var(--frost);margin-bottom:34px}
+.event-tag i{width:8px;height:8px;border-radius:50%;background:var(--berry);display:block;animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.hero p.lead{margin:30px 0 40px}
+.hero .actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero .meta{margin-top:56px;display:flex;gap:42px;flex-wrap:wrap;font-size:15px;opacity:.8}
+.hero .meta b{display:block;color:var(--sun);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:56px}
+.stat{border-top:3px solid var(--sun);padding-top:20px}
+.stat .n{font-size:clamp(44px,5vw,64px);font-weight:600;color:var(--sun);line-height:1}
+.stat p{margin-top:12px;font-size:16px;opacity:.85}
+.light .stat .n{color:var(--berry)} .light .stat{border-color:var(--berry)}
+@media(max-width:860px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* loop */
+.loop{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;position:relative}
+.step{background:rgba(255,243,235,.06);border:1px solid rgba(219,172,245,.25);border-radius:24px;padding:34px 30px}
+.step .num{font-family:'Noto Serif Display',serif;font-style:italic;font-weight:800;font-size:56px;color:var(--sun);line-height:1;margin-bottom:14px}
+.step .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--depths);background:var(--frost);padding:3px 12px;border-radius:12px;margin-bottom:14px}
+.step p{opacity:.85;font-size:16px}
+.proof{margin-top:36px;padding:26px 30px;border-radius:24px;background:var(--depths);display:flex;gap:18px;align-items:center;font-size:17px}
+.proof b{color:var(--sun)}
+@media(max-width:860px){.loop{grid-template-columns:1fr}}
+
+/* platform grid */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.card{background:#fff;border-radius:24px;padding:32px 28px;border:1px solid rgba(12,20,54,.08);transition:transform .2s,box-shadow .2s;display:block}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(12,20,54,.12)}
+.card .dot{width:44px;height:44px;border-radius:50% 50% 50% 8px;background:var(--berry);margin-bottom:20px}
+.card:nth-child(3n+2) .dot{background:var(--sun)}
+.card:nth-child(3n) .dot{background:var(--frost)}
+.card p{font-size:16px;opacity:.8}
+.card span{display:inline-block;margin-top:16px;font-size:14px;font-weight:600;color:var(--berry)}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}} @media(max-width:600px){.grid{grid-template-columns:1fr}}
+
+/* customers */
+.cust{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}
+.cust a{border-radius:24px;padding:34px 30px;background:rgba(255,243,235,.06);border:1px solid rgba(255,243,235,.12);transition:border-color .2s}
+.cust a:hover{border-color:var(--sun)}
+.cust .big{font-size:52px;font-weight:600;color:var(--sun);line-height:1}
+.cust h3{margin-top:16px;font-size:18px}
+.cust p{font-size:15px;opacity:.75}
+@media(max-width:900px){.cust{grid-template-columns:1fr}}
+blockquote{margin-top:64px;max-width:820px;font-size:clamp(22px,3vw,32px);line-height:1.4;font-weight:600}
+blockquote small{display:block;margin-top:18px;font-size:15px;font-weight:400;opacity:.75}
+
+/* cta */
+.cta{text-align:center;background:linear-gradient(160deg,var(--depths),#1a1f55 70%)}
+.cta h2{max-width:820px;margin:0 auto 22px}
+.cta p{margin:0 auto 38px}
+footer{padding:40px 0;font-size:14px;opacity:.7;border-top:1px solid rgba(255,243,235,.1)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+/* placeholder bubble (hidden once real widget is added) */
+#mock-bubble{position:fixed;right:24px;bottom:24px;z-index:50;display:none}
+#mock-bubble button{width:64px;height:64px;border-radius:50% 50% 50% 10px;border:0;background:var(--berry);color:#fff;font-size:28px;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+#mock-bubble .tip{position:absolute;right:76px;bottom:12px;background:var(--haze);color:var(--depths);font-size:14px;font-weight:600;padding:10px 16px;border-radius:16px 16px 4px 16px;white-space:nowrap}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top"><img src="https://ai.puzzel.com/assets/logos/PuzzelLogo.svg" alt="Puzzel"></a>
+    <div class="links">
+      <a href="#learning-loop">Learning Loop</a>
+      <a href="#platform">Platform</a>
+      <a href="#results">Customers</a>
+      <a href="#ask" class="btn primary">Talk to us</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="event-tag"><i></i> Engage Customer Summit · 7–8 October 2026 · London</div>
+    <h1>Better conversations.<br>Powered by AI.<br><em class="accent">Perfected by humans.</em></h1>
+    <p class="lead">Welcome to the Puzzel stand. See how Europe’s customer experience leaders use one AI-native CX ecosystem to give agents real-time support and customers faster, more human service.</p>
+    <div class="actions">
+      <a href="#ask" class="btn primary" data-open-chat>Ask me about the Puzzel Learning Loop</a>
+      <a href="https://www.puzzel.com/demo-request" class="btn ghost">Book a demo</a>
+    </div>
+    <div class="meta">
+      <div><b>Event</b>Engage Customer Summit</div>
+      <div><b>Venue</b>Evolution, Battersea, London</div>
+      <div><b>Dates</b>7–8 October 2026</div>
+    </div>
+  </div>
+</header>
+
+<section class="light" id="results">
+  <div class="wrap">
+    <span class="eyebrow">Results you can stand behind</span>
+    <h2>Clear impact you can take <em class="accent">to the board.</em></h2>
+    <div class="stats">
+      <div class="stat"><div class="n">278%</div><p>ROI over three years</p></div>
+      <div class="stat"><div class="n">25+</div><p>years of building leading CX solutions</p></div>
+      <div class="stat"><div class="n">86%</div><p>faster response times</p></div>
+      <div class="stat"><div class="n">400+</div><p>hours saved on admin</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="learning-loop">
+  <div class="wrap">
+    <span class="eyebrow">A strong foundation</span>
+    <h2>Start with the <em class="accent">Learning Loop.</em></h2>
+    <p class="lead">Understand what customers need, build the knowledge to handle it, and deploy AI at your own pace. Each turn of the loop makes the next one better.</p>
+    <div class="loop">
+      <div class="step"><div class="num">1</div><span class="tag">Conversational Intelligence</span><h3>Understand</h3><p>Turn every interaction into insight with automatic transcription, tagging and analysis. See what drives satisfaction and where teams need support.</p></div>
+      <div class="step"><div class="num">2</div><span class="tag">Knowledge Management</span><h3>Build the knowledge</h3><p>Turn what you learn into structured, accurate answers that agents and AI can rely on.</p></div>
+      <div class="step"><div class="num">3</div><span class="tag">Virtual Agents &amp; Co-Pilot</span><h3>Deploy AI</h3><p>Automate FAQs and repetitive tasks, and give agents live guidance during calls. Then feed the results back into the loop.</p></div>
+    </div>
+    <div class="proof"><span>★</span><span><b>Din Sundhedsfaglige A-kasse</b> transformed member support with Puzzel’s AI-driven Virtual Agent experience.</span></div>
+  </div>
+</section>
+
+<section class="light" id="platform">
+  <div class="wrap">
+    <span class="eyebrow">The Puzzel CX ecosystem</span>
+    <h2>Everything your team needs to deliver faster, <em class="accent">more human service.</em></h2>
+    <div class="grid">
+      <a class="card" href="https://www.puzzel.com/products/contact-centre"><div class="dot"></div><h3>Contact Centre</h3><p>Meet customers in any channel, with one interface for instant, personalised replies.</p><span>Explore →</span></a>
+      <a class="card" href="https://www.puzzel.com/products/conversational-intelligence"><div class="dot"></div><h3>Conversational Intelligence</h3><p>Automatic transcription, tagging and analysis that turn every interaction into insight.</p><span>Explore →</span></a>
+      <a class="card" href="https://www.puzzel.com/products/virtual-agent-suite"><div class="dot"></div><h3>Virtual Agents</h3><p>Handle FAQs and repetitive tasks automatically across chat, voice and email.</p><span>Explore →</span></a>
+      <a class="card" href="https://www.puzzel.com/products/agent-co-pilot"><div class="dot"></div><h3>Co-Pilot</h3><p>Live, on-screen guidance that helps agents respond with speed and confidence.</p><span>Explore →</span></a>
+      <a class="card" href="https://www.puzzel.com/products/case-management"><div class="dot"></div><h3>Case Management</h3><p>SMS, email and social conversations managed in one place.</p><span>Explore →</span></a>
+      <a class="card" href="https://www.puzzel.com/products/workforce-management"><div class="dot"></div><h3>Workforce Management</h3><p>Simpler scheduling, so agents can focus on first-class support.</p><span>Explore →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="pine">
+  <div class="wrap">
+    <span class="eyebrow">How teams like yours succeed</span>
+    <h2>Proof from the <em class="accent">front line.</em></h2>
+    <div class="cust">
+      <a href="https://www.puzzel.com/customers/telmore"><div class="big">400 hrs</div><h3>Telmore</h3><p>saved every month with AI-driven Conversational Intelligence.</p></a>
+      <a href="https://www.puzzel.com/customers/newmarket-holiday"><div class="big">65%</div><h3>Newmarket Holidays</h3><p>reduction in wrap-up time after moving to Puzzel.</p></a>
+      <a href="https://www.puzzel.com/customers/nrla"><div class="big">85%</div><h3>NRLA</h3><p>cut in written response times after moving to the cloud.</p></a>
+    </div>
+    <blockquote>“Before Puzzel, we simply couldn’t deliver a real channel of choice. Now, we can, and that’s had an immediate impact on productivity, capacity, and the overall member experience.”
+      <small>Dan Allen, Deputy Director for Member Support, NRLA</small></blockquote>
+  </div>
+</section>
+
+<section class="cta" id="ask">
+  <div class="wrap">
+    <span class="eyebrow">Try it yourself</span>
+    <h2>Ask me about the <em class="accent">Puzzel Learning Loop.</em></h2>
+    <p class="lead">Open the chat bubble in the corner and ask anything about how Puzzel supports your contact centre. Or come and talk to the team on the stand.</p>
+    <a href="#" class="btn primary" data-open-chat>Start a conversation</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Puzzel · Demo page for Engage Customer Summit, 7–8 October, Evolution, London</span>
+    <span><a href="https://www.puzzel.com">puzzel.com</a> · <a href="https://www.engagecustomer.com">engagecustomer.com</a></span>
+  </div>
+</footer>
+
+<!-- Placeholder bubble: shown only until the real chat widget is added below. -->
+<div id="mock-bubble"><span class="tip">Ask me about the Learning Loop</span><button aria-label="Open chat">💬</button></div>
+
+<!-- ============================================================
+     PASTE THE PUZZEL CHAT BUBBLE EMBED SNIPPET HERE
+     (then set USE_MOCK_BUBBLE to false below)
+     ============================================================ -->
+<script type="text/javascript">
+    (function (a, b) {
+    var loader = a.createElement('script');
+    loader.type = 'text/javascript';
+    loader.src = 'https://app-cdn.puzzel.com/public/js/pzl_loader.js';
+    loader.setAttribute('id', 'pzlModuleLoader');
+    loader.setAttribute('data-customer-id', b);
+    a.body.append(loader);
+})(document, '99206');
+</script>
+
+<script>
+  const USE_MOCK_BUBBLE = false; // real Puzzel chat snippet is installed above
+  if (USE_MOCK_BUBBLE) document.getElementById('mock-bubble').style.display = 'block';
+
+  // CTA buttons try to open the real widget; add your widget's open call here if it has one.
+  document.querySelectorAll('[data-open-chat]').forEach(function(el){
+    el.addEventListener('click', function(){
+      // e.g. window.PuzzelChat && window.PuzzelChat.open();
+    });
+  });
+</script>
+</body>
+</html>
